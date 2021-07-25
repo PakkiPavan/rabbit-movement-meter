@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://labs.nearpod.com/bodymovin/demo/perricorn/bodymovin.js"></script>
+        <script src="https://labs.nearpod.com/bodymovin/demo/perricorn/data.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+                <label for="input">How's the rabbit's energy today?</label>
+                <input
+                    id="input"
+                    type="number" 
+                    min="1"
+                    max="10"
+                    value="1"
+                    onchange="moveMeter()"
+                />
+                <div id="svgContainer"></div>
+                <meter
+                    id="energy" 
+                    min="0"
+                    max="10" 
+                    low="3"
+                    high="7"
+                    optimum="10"
+                    value="1"
+                ></meter>
+        </div>
+        
+       
+        <script src="index.js"></script>
+    </body>
+</html>
